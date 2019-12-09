@@ -14,7 +14,7 @@
 ## Install
 - creat folder in htdoc 
 - copy repository path
-- git clone https://github.com/edolorenza/hosting-bpbd.git
+- git clone https://github.com/algamhr/CI-JST.git
 - Create DB `CI`
 - Import CI sql
 - SET  USERNAME, PASSWORD, DATABASE_name, and App URL in your .ENV file 
