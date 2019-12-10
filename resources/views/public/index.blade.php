@@ -19,125 +19,123 @@
 <body style="background-image: linear-gradient(to right, #6574cd , #9561e2);">
     <div class="header">
         <div class="login">
-        <a  href="/dashboard "style="text-decoration:none"class="loginhref"><img src="{{asset('assets/admin/assets/images/user.png')}}" class="imguser"> LOGIN</a>
+        <a  href="/home "style="text-decoration:none"class="loginhref"><img src="{{asset('assets/admin/assets/images/user.png')}}" class="imguser"> LOGIN</a>
         </div>
 
-        
-        
-    <div class="page-wrapper mdc-toolbar-fixed-adjust">
-            <main class="content-wrapper">
-                <section class="ftco-section contact-section">
-                    <div class="container">
-                        <div class="card">
-                            <div class="card-body">
 
 
-                                <div class="mdc-layout-grid">
-                                    <div class="mdc-layout-grid__inner">
-                                      <div class="mdc-layout-grid__cell--span-8">
-                                        <div class="mdc-card">
-                                          <h6 class="card-title">Prediksi</h6>
-                                          <div class="template-demo">
-                                            <div class="mdc-layout-grid__inner">
-                                                
-                                              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                                  
-                                                  <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                                      <div class="mdc-text-field mdc-text-field--outlined">
-                                                        <input class="mdc-text-field__input" type="text" name="temp" id="text-field-hero-input">
-                                                        <div class="mdc-notched-outline">
-                                                          <div class="mdc-notched-outline__leading"></div>
-                                                          <div class="mdc-notched-outline__notch">
-                                                            <label for="text-field-hero-input" class="mdc-floating-label">Learning Rate</label>
-                                                          </div>
-                                                          <div class="mdc-notched-outline__trailing"></div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-                                                    
-                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                        <input class="mdc-text-field__input" type="text" name="hum" id="text-field-hero-input">
-                                                        <div class="mdc-notched-outline">
-                                                          <div class="mdc-notched-outline__leading"></div>
-                                                          <div class="mdc-notched-outline__notch">
-                                                            <label for="text-field-hero-input" class="mdc-floating-label">E-poch</label>
-                                                          </div>
-                                                          <div class="mdc-notched-outline__trailing"></div>
-                                                        </div>
-                                                      </div>
-                                              </div>
-                                              
-                                              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
-                                                 
-                                                  <input class="mdc-text-field__input" type="text" name="windspeed" id="text-field-hero-input">
-                                                  <div class="mdc-notched-outline">
-                                                    <div class="mdc-notched-outline__leading"></div>
-                                                    <div class="mdc-notched-outline__notch">
-                                                      <label for="text-field-hero-input" class="mdc-floating-label">Neuron</label>
-                                                    </div>
-                                                    <div class="mdc-notched-outline__trailing"></div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              {{-- <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon">
-                                                  
-                                                  <input class="mdc-text-field__input" type="text" name="weathersit" id="text-field-hero-input">
-                                                  <div class="mdc-notched-outline">
-                                                    <div class="mdc-notched-outline__leading"></div>
-                                                    <div class="mdc-notched-outline__notch">
-                                                      <label for="text-field-hero-input" class="mdc-floating-label">Weathersit</label>
-                                                    </div>
-                                                    <div class="mdc-notched-outline__trailing"></div>
-                                                  </div>
-                                                </div>
-                                              </div> --}}
-                                                <td>
-                                                    <div class="template-demo">
-                                                            <button type="submit" class="mdc-button mdc-button--unelevated">
-                                                            SIMPAN
-                                                            </button>
-                                                </td>
-                                            </form>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                  
-                                <div class="mdc-layout-grid">
-                                    <div class="mdc-layout-grid__inner">
-                                      <div class="mdc-layout-grid__cell--span-12">
-                                        <div class="mdc-card">
-                                          <h6 class="card-title">Hasil</h6>
-                                          <div class="template-demo">
-                                            <div class="mdc-layout-grid__inner">
-                                            
-                            
-                                             
-                                        
-                                              <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                                
-                                              </div>
-                                                
-                                            </form>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              
-                                  </div>
-                                   
+<div class="page-wrapper mdc-toolbar-fixed-adjust">
+<main class="content-wrapper">
+<section class="ftco-section contact-section">
+<div class="container">
+<div class="card">
+<div class="card-body">
+<div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-8">
+        <div class="mdc-card">
+        <h6 class="card-title">Prediksi</h6>
+        <div class="template-demo">
+            <div class="mdc-layout-grid__inner">
+
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+
+                <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                    <div class="mdc-text-field mdc-text-field--outlined">
+                        <input class="mdc-text-field__input" type="text" name="temp" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">Learning Rate</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="mdc-text-field mdc-text-field--outlined">
+                        <input class="mdc-text-field__input" type="text" name="hum" id="text-field-hero-input">
+                        <div class="mdc-notched-outline">
+                        <div class="mdc-notched-outline__leading"></div>
+                        <div class="mdc-notched-outline__notch">
+                            <label for="text-field-hero-input" class="mdc-floating-label">E-poch</label>
+                        </div>
+                        <div class="mdc-notched-outline__trailing"></div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+
+                <input class="mdc-text-field__input" type="text" name="windspeed" id="text-field-hero-input">
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                    <label for="text-field-hero-input" class="mdc-floating-label">Neuron</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+                </div>
+            </div>
+            {{-- <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+                <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon">
+
+                <input class="mdc-text-field__input" type="text" name="weathersit" id="text-field-hero-input">
+                <div class="mdc-notched-outline">
+                    <div class="mdc-notched-outline__leading"></div>
+                    <div class="mdc-notched-outline__notch">
+                    <label for="text-field-hero-input" class="mdc-floating-label">Weathersit</label>
+                    </div>
+                    <div class="mdc-notched-outline__trailing"></div>
+                </div>
+                </div>
+            </div> --}}
+                <td>
+                    <div class="template-demo">
+                            <button type="submit" class="mdc-button mdc-button--unelevated">
+                            SIMPAN
+                            </button>
+                </td>
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+
+
+<div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+    <div class="mdc-layout-grid__cell--span-12">
+        <div class="mdc-card">
+        <h6 class="card-title">Hasil</h6>
+        <div class="template-demo">
+            <div class="mdc-layout-grid__inner">
+
+
+
+
+            <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
+
+            </div>
+
+            </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+</div>
+
 
                       <h6 class="card-title card-padding pb-0">Data Cuaca</h6>
                       <div class="table-responsive">
                           <table id="example" class="table">
-                       
+
                           <thead>
                             <tr>
                               <th class="text-left">Tanggal</th>
@@ -149,7 +147,7 @@
                           </thead>
                           <tbody>
                               @foreach ($weather as $weather)
-                                  
+
                             <tr>
                                     <td class="text-left">{{$weather->dteday}}</td>
                                     <td>{{$weather->temp}}</td>
