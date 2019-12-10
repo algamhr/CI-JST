@@ -52,7 +52,7 @@
                                 </div>
 
                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-6-desktop">
-                                    <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-leading-icon">
+                                    <div class="mdc-text-field mdc-text-field--outlined mdc-text-field--with-trailing-icon">
                                         <input class="mdc-text-field__input" type="text" name="windspeed"
                                             id="text-field-hero-input">
                                         <div class="mdc-notched-outline">
