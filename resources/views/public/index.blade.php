@@ -36,7 +36,7 @@
                     <div class="mdc-layout-grid__inner">
                       <div class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                         <div class="mdc-card">
-                          <h6 class="card-title">Pengujian</h6>
+                          <h6 class="card-title">Normalisasi</h6>
                           <div class="template-demo">
                                 <div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                             <div class="mdc-text-field mdc-text-field--outlined">
@@ -44,7 +44,7 @@
                                                 <div class="mdc-notched-outline">
                                                 <div class="mdc-notched-outline__leading"></div>
                                                 <div class="mdc-notched-outline__notch">
-                                                    <label for="text-field-hero-input" class="mdc-floating-label">Learning Rate</label>
+                                                    <label for="text-field-hero-input" class="mdc-floating-label">Epoch</label>
                                                 </div>
                                                 <div class="mdc-notched-outline__trailing"></div>
                                                 </div>
@@ -70,7 +70,7 @@
                                             <div class="mdc-notched-outline">
                                             <div class="mdc-notched-outline__leading"></div>
                                             <div class="mdc-notched-outline__notch">
-                                                <label for="text-field-hero-input" class="mdc-floating-label">Learning Rate</label>
+                                                <label for="text-field-hero-input" class="mdc-floating-label">Neuron Hidden</label>
                                             </div>
                                             <div class="mdc-notched-outline__trailing"></div>
                                             </div>
@@ -83,7 +83,7 @@
                                                 <div class="mdc-notched-outline">
                                                 <div class="mdc-notched-outline__leading"></div>
                                                 <div class="mdc-notched-outline__notch">
-                                                    <label for="text-field-hero-input" class="mdc-floating-label">Learning Rate</label>
+                                                    <label for="text-field-hero-input" class="mdc-floating-label">Error</label>
                                                 </div>
                                                 <div class="mdc-notched-outline__trailing"></div>
                                                 </div>
@@ -94,7 +94,7 @@
                                         <td>
                                                 <div class="template-demo">
                                                         <button type="submit" class="mdc-button mdc-button--unelevated">
-                                                        Pengujian
+                                                        Latih Data
                                                         </button>
                                             </td>
                                         </form>
@@ -125,8 +125,8 @@
                 <div class="mdc-layout-grid__inner">
                   <div class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
                     <div class="mdc-card">
-                      <h6 class="card-title">Pengujian</h6>
-                      <h6 class="card-title card-padding pb-0">Data Cuaca</h6>
+                      <h6 class="card-title">Data Cuaca</h6>
+                      <h6 class="card-title card-padding pb-0"></h6>
                       <div class="table-responsive">
                           <table id="example" class="table">
 
@@ -147,7 +147,21 @@
                                     <td>{{$weather->temp}}</td>
                                     <td>{{$weather->hum}}</td>
                                     <td>{{$weather->windspeed}}</td>
-                                    <td>{{$weather->weathersit}}</td>
+                                    <td>
+                                    @if ($weather->weathersit == '1')
+                                    <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}" alt="" height="25px">
+                                    
+                                    @elseif ($weather->weathersit == '2')
+                                    <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}" alt="" height="25px">
+
+                                    @elseif ($weather->weathersit == '3')
+                                    <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}" alt="" height="25px">
+
+                                    @elseif ($weather->weathersit == '4')
+                                    <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}" alt="" height="25px">
+                                        
+                                    @endif
+                                    </td>
                                   </tr>
                               @endforeach
                           </tbody>
