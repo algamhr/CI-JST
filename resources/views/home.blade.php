@@ -107,23 +107,28 @@
                   </div>
                   <div class="chart-container mt-4">
                       @if ($weather->weathersit == '1')
+                      {{ "Cerah" }}
                       <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}"
-                          alt="" class="rounded mx-auto d-block" height="80px">
+                          alt="" class="rounded mx-auto d-block" height="250px">
+                          
 
                       @elseif ($weather->weathersit == '2')
+                      {{ "Hujan" }}
                       <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}"
-                          alt="" height="200px">
+                          alt="" class="rounded mx-auto d-block" height="250px">
 
                       @elseif ($weather->weathersit == '3')
+                      {{ "Badai Petir" }}
                       <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}"
-                          alt="" height="200px">
+                          alt="" class="rounded mx-auto d-block" height="250px">
 
                       @elseif ($weather->weathersit == '4')
+                      {{ "Badai Hujan" }}
                       <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}"
-                          alt="" height="200px">
+                          alt="" class="rounded mx-auto d-block" height="250px">
 
                       @endif
-                    <canvas id="chart-sales" height="260">
+                    <canvas id="chart-sales" height="50">
                         
                     </canvas>
                   </div>
