@@ -1,7 +1,5 @@
 @extends('layouts.backend')
 
-
-
 @section('content')
 
  <!-- partial -->
@@ -197,6 +195,5 @@
         </main>
         <!-- partial:partials/_footer.html -->
         </main>
-
-
+        
 @endsection
