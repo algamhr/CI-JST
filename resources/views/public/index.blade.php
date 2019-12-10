@@ -147,7 +147,21 @@
                                     <td>{{$weather->temp}}</td>
                                     <td>{{$weather->hum}}</td>
                                     <td>{{$weather->windspeed}}</td>
-                                    <td>{{$weather->weathersit}}</td>
+                                    <td>
+                                    @if ($weather->weathersit == '1')
+                                    <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}" alt="" height="25px">
+                                    
+                                    @elseif ($weather->weathersit == '2')
+                                    <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}" alt="" height="25px">
+
+                                    @elseif ($weather->weathersit == '3')
+                                    <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}" alt="" height="25px">
+
+                                    @elseif ($weather->weathersit == '4')
+                                    <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}" alt="" height="25px">
+                                        
+                                    @endif
+                                    </td>
                                   </tr>
                               @endforeach
                           </tbody>
