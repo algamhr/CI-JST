@@ -13,7 +13,7 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body" style="text-align:center;">
                 <p>Yakin ingin menghapus data dengan suhu <b>{{$weather->temp}}</b> ?</p>
             </div>
             <div class="modal-footer">
