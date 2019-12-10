@@ -14,7 +14,7 @@
 use App\Http\Controllers\DashboardController;
 
 Route::get('/', 'PublicController@index');
-Route::get('/dashboard', 'DashboardController@index');
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
@@ -22,4 +22,5 @@ Auth::routes();
 
 Route::get('/public', 'PublicController@index');
 Route::resource('dashboard', 'DashboardController');
+Route::resource('users', 'UserController');
 Route::get('/dashboard/delete/{id}', 'DashboardController@destroy');

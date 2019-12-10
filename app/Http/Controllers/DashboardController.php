@@ -52,8 +52,9 @@ class DashboardController extends Controller
             'hum'=>$request->hum,
             'windspeed'=>$request->windspeed,
             'weathersit'=>$request->weathersit,
-        ]) ;  
-            session()->flash('sucess', 'data berhasil di tambah');
+        ]) ;
+
+        session()->flash('success', 'data cuaca berhasil di tambah');
         return redirect(route('dashboard.index'));
     }
 
@@ -93,6 +94,7 @@ class DashboardController extends Controller
     {
         //
         $weather=DB::table('t_weather')->where('id', $id)->update(['temp' => $request->temp, 'hum' => $request->hum, 'windspeed' => $request->windspeed, 'weathersit' => $request->weathersit]);
+        session()->flash('success', 'data cuaca berhasil di ubah');
         return redirect('dashboard');
     }
 
@@ -106,6 +108,7 @@ class DashboardController extends Controller
     {
         //
         $weather=DB::table('t_weather')->where('id', $id)->delete();
+        session()->flash('success', 'data cuaca berhasil di hapus');
         return redirect('dashboard');
     }
 }
