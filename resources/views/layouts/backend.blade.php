@@ -126,7 +126,7 @@
                                 </div>
 
                                 <div class="item-content d-flex align-items-start flex-column justify-content-center">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                    <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                                   document.getElementById('logout-form').submit();">
                                   <h6 class="item-subject font-weight-normal">
