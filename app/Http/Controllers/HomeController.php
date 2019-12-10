@@ -28,10 +28,9 @@ class HomeController extends Controller
     public function index()
     {
 
-        $weather = DB::table('t_weather')->orderBy('dteday', 'desc')->get();
+        $weather = DB::table('t_weather')->orderBy('dteday', 'desc')->first();
         $users = DB::table('users')->where('id', 1)->first();
         return view('home', ['weather'=>$weather, 'users'=>$users]);
     }
-
 
 }

@@ -93,13 +93,39 @@
                 <div class="mdc-card">
                   <div class="d-flex d-lg-block d-xl-flex justify-content-between">
                     <div>
-                      <h4 class="card-title">Order Statistics</h4>
-                      <h6 class="card-sub-title">Customers 58.39k</h6>
+                      <h4 class="card-title">Cuaca Hari Ini</h4>
+                      <h6 class="card-sub-title" >
+                    
+                        {{$weather->dteday}}
+              
+                        </h6>
                     </div>
-                    <div id="sales-legend" class="d-flex flex-wrap"></div>
+                    <div id="sales-legend" class="d-flex flex-wrap">
+
+                        
+                    </div>
                   </div>
                   <div class="chart-container mt-4">
-                    <canvas id="chart-sales" height="260"></canvas>
+                      @if ($weather->weathersit == '1')
+                      <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}"
+                          alt="" class="rounded mx-auto d-block" height="80px">
+
+                      @elseif ($weather->weathersit == '2')
+                      <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}"
+                          alt="" height="200px">
+
+                      @elseif ($weather->weathersit == '3')
+                      <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}"
+                          alt="" height="200px">
+
+                      @elseif ($weather->weathersit == '4')
+                      <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}"
+                          alt="" height="200px">
+
+                      @endif
+                    <canvas id="chart-sales" height="260">
+                        
+                    </canvas>
                   </div>
                 </div>
               </div>
