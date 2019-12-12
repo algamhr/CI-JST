@@ -99,7 +99,7 @@ class PublicController extends Controller
         $data = DB::table('t_weather')->get();
         $count = DB::table('t_normalisasi')->count('id');
         if($count != 0) {
-            
+
             DB::table('t_normalisasi')->truncate();
             foreach($data as $data){
                 DB::table('t_normalisasi')->insert(
@@ -110,7 +110,7 @@ class PublicController extends Controller
                     'weathersit'=> (($data->weathersit-$min_weathersit)/($max_weathersit-$min_weathersit))]
                 );
             }
-            
+
         } else{
             foreach($data as $data){
                 DB::table('t_normalisasi')->insert(
@@ -122,7 +122,7 @@ class PublicController extends Controller
                 );
             }
         }
-        
+
 
         return redirect('index_normalisasi');
     }
@@ -131,6 +131,12 @@ class PublicController extends Controller
     {
         $normalisasi = DB::table('t_normalisasi')->orderBy('dteday', 'desc')->get();
         return view('public.normalisasi', ['weather'=>$normalisasi, 'normalisasi' => $normalisasi]);
+    }
+
+    public function pengujian()
+    {
+        $normalisasi = DB::table('t_normalisasi')->orderBy('dteday', 'desc')->get();
+        return view('public.pengujian', ['weather'=>$normalisasi, 'normalisasi' => $normalisasi]);
     }
 
 }

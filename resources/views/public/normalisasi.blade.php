@@ -124,7 +124,7 @@
                                                 class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                 <div class="mdc-card">
                                                     <h6>Hasil</h6>
-                                                        <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="hasil"></textarea>
+                                                        <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="normalisasi"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -135,16 +135,29 @@
                                             class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                             <div class="mdc-card">
                                                 <h6 class="card-title">Data Cuaca</h6>
-                                                <h6 class="card-title card-padding pb-0"><a href="{{ route('normalisasi') }}"></a></h6>
+                                                <div class="text-right">
+                                                        <form action="/normalisasi" method="POST">
+                                                         @csrf
+                                                            <button type="submit"
+                                                                class="mdc-button mdc-button--unelevated">
+                                                                Normalisasi
+                                                            </button>
+                                                         </form>
+                                                 </div>
+                                                 <div class="text-right mt-2">
+                                                        <form action="/pengujian" method="POST">
+                                                            @csrf
+                                                         <button type="submit"
+                                                            class="mdc-button mdc-button--unelevated">
+                                                            Pengujian
+                                                         </button>
+                                                        </form>
+                                                    </div>
+
+                                                <h6 class="card-title card-padding pb-0"> </h6>
 
                                                 <div class="table-responsive">
-                                                    <form action="/normalisasi" method="POST">
-                                                        {{ csrf_field() }}
-                                                            <div class="template-demo">
-                                                                    <button type="submit"
-                                                                        class="mdc-button mdc-button--unelevated">
-                                                                        Normalisasi
-                                                                    </button>
+
                                                     <table id="example" class="table">
                                                         <thead>
                                                             <tr>
@@ -168,7 +181,7 @@
                                                             @endforeach
                                                         </tbody>
                                                     </table>
-                                                    </form>
+
                                                 </div>
                                             </div>
                                         </div>

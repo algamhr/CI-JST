@@ -30,3 +30,4 @@ Route::get('export', 'MyController@export')->name('export');
 Route::get('/importExportView', 'MyController@importview')->name('importview');
 Route::post('import', 'MyController@import')->name('import');
 Route::post('/normalisasi', 'PublicController@normalisasi')->name('normalisasi');
+Route::post('/pengujian', 'PublicController@pengujian')->name('pengujian');

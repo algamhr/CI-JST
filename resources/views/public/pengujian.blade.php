@@ -28,123 +28,107 @@
             <main class="content-wrapper">
                 <section class="ftco-section contact-section">
                     <div class="container">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="page-wrapper mdc-toolbar-fixed-adjust">
-                                    <main class="content-wrapper">
-                                        <div class="mdc-layout-grid">
-                                            <div class="mdc-layout-grid__inner">
-                                                <div
-                                                    class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
-                                                    <div class="mdc-card">
-                                                        <h6 class="card-title">Normalisasi</h6>
-                                                        <div class="template-demo">
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Epoch</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Learning
-                                                                                Rate</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Neuron
-                                                                                Hidden</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Error</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-
-                                                            <td>
+                            <div class="card">
+                                    <div class="card-body">
+                                        <div class="page-wrapper mdc-toolbar-fixed-adjust">
+                                            <main class="content-wrapper">
+                                                <div class="mdc-layout-grid">
+                                                    <div class="mdc-layout-grid__inner">
+                                                        <div
+                                                            class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
+                                                            <div class="mdc-card">
+                                                                <h6 class="card-title">Pelatihan (Training)</h6>
                                                                 <div class="template-demo">
-                                                                    <button type="submit"
-                                                                        class="mdc-button mdc-button--unelevated">
-                                                                        Latih Data
-                                                                    </button>
-                                                            </td>
-                                                            </form>
+                                                                    <div
+                                                                        class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
+                                                                        <div class="mdc-text-field mdc-text-field--outlined">
+                                                                            <input class="mdc-text-field__input" type="text"
+                                                                                name="temp" id="epoch">
+                                                                            <div class="mdc-notched-outline">
+                                                                                <div class="mdc-notched-outline__leading"></div>
+                                                                                <div class="mdc-notched-outline__notch">
+                                                                                    <label for="text-field-hero-input"
+                                                                                        class="mdc-floating-label">Suhu</label>
+                                                                                </div>
+                                                                                <div class="mdc-notched-outline__trailing">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
+                                                                        <div class="mdc-text-field mdc-text-field--outlined">
+                                                                            <input id="learn" class="mdc-text-field__input" type="text"
+                                                                                name="lr">
+                                                                            <div class="mdc-notched-outline">
+                                                                                <div class="mdc-notched-outline__leading"></div>
+                                                                                <div class="mdc-notched-outline__notch">
+                                                                                    <label for="text-field-hero-input"
+                                                                                        class="mdc-floating-label">Kelembaban</label>
+                                                                                </div>
+                                                                                <div class="mdc-notched-outline__trailing">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
+                                                                        <div class="mdc-text-field mdc-text-field--outlined">
+                                                                            <input class="mdc-text-field__input" type="text"
+                                                                                name="nh" id="neuron">
+                                                                            <div class="mdc-notched-outline">
+                                                                                <div class="mdc-notched-outline__leading"></div>
+                                                                                <div class="mdc-notched-outline__notch">
+                                                                                    <label for="text-field-hero-input"
+                                                                                        class="mdc-floating-label"> Kecepatan angin </label>
+                                                                                </div>
+                                                                                <div class="mdc-notched-outline__trailing">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <td>
+                                                                        <div class="template-demo">
+                                                                            <button type="submit"
+                                                                                class="mdc-button mdc-button--unelevated" onclick="latih();">
+                                                                               Uji Data
+                                                                            </button>
+                                                                    </td>
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
+                                                        <div class="mdc-card">
+                                                            <h6>Prediksi Cuaca</h6>
+                                                                <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="hasil"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div
-                                                class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
-                                                <div class="mdc-card">
-                                                    <h6 class="card-title">Hasil</h6>
-                                                    <div class="template-demo">
-                                                        <div class="mdc-select demo-width-class"
-                                                            data-mdc-auto-init="MDCSelect">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
-                                </div>
-                                
-            </main>
-            <!-- partial -->
-        </div>
 
-        <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
-        <!-- Datatables -->
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-        <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
+                    </main>
+                    <!-- partial -->
+                </div>
 
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+                <script src="{{asset('assets/admin/assets/vendors/js/vendor.bundle.base.js')}}"></script>
+                <script src="{{asset('assets/admin/assets/js/material.js')}}"></script>
+                <script src="{{asset('assets/admin/assets/js/misc.js')}}"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
+
+                <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+                <!-- Datatables -->
+                <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+                <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
+                <script src="{{ asset('js/select2.min.js') }}"></script>
+                <script src="{{ asset('js/flatpicker.js') }}"></script>
 
         <script>
             $(document).ready(function () {
