@@ -16,6 +16,13 @@
                       <i class="material-icons options-icon">more_vert</i>
                     </div>
                   </div>
+                  <form action="{{ route('import') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <input type="file" name="file" class="form-control">
+                    <br>
+                    <button class="btn btn-success">Import User Data</button>
+                    
+                </form>
                   <div class="d-block d-sm-flex justify-content-between align-items-center">
                     <h6 class="card-sub-title mb-0">Sales performance revenue based by country</h6>
                     <div class="mdc-tab-wrapper revenue-tab mdc-tab--secondary">

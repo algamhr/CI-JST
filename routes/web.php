@@ -21,6 +21,12 @@ Auth::routes();
 
 
 Route::get('/public', 'PublicController@index');
+Route::get('/index_normalisasi', 'PublicController@index_normalisasi');
 Route::resource('dashboard', 'DashboardController');
 Route::resource('users', 'UserController');
 Route::get('/dashboard/delete/{id}', 'DashboardController@destroy');
+
+Route::get('export', 'MyController@export')->name('export');
+Route::get('/importExportView', 'MyController@importview')->name('importview');
+Route::post('import', 'MyController@import')->name('import');
+Route::post('/normalisasi', 'PublicController@normalisasi')->name('normalisasi');

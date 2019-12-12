@@ -84,4 +84,53 @@ class PublicController extends Controller
     {
         //
     }
+
+    public function normalisasi(Request $request)
+    {
+        $max_temp = DB::table('t_weather')->max('temp');
+        $min_temp = DB::table('t_weather')->min('temp');
+        $max_hum = DB::table('t_weather')->max('hum');
+        $min_hum = DB::table('t_weather')->min('hum');
+        $max_windspeed = DB::table('t_weather')->max('windspeed');
+        $min_windspeed = DB::table('t_weather')->min('windspeed');
+        $min_weathersit = DB::table('t_weather')->min('weathersit');
+        $max_weathersit = DB::table('t_weather')->max('weathersit');
+
+        $data = DB::table('t_weather')->get();
+        $count = DB::table('t_normalisasi')->count('id');
+        if($count != 0) {
+            
+            DB::table('t_normalisasi')->truncate();
+            foreach($data as $data){
+                DB::table('t_normalisasi')->insert(
+                    ['dteday' => $data->dteday,
+                    'temp' => (($data->temp-$min_temp)/($max_temp-$min_temp)),
+                    'hum' =>  (($data->hum-$min_hum)/($max_hum-$min_hum)),
+                    'windspeed' =>  (($data->windspeed-$min_windspeed)/($max_windspeed-$min_windspeed)),
+                    'weathersit'=> (($data->weathersit-$min_weathersit)/($max_weathersit-$min_weathersit))]
+                );
+            }
+            
+        } else{
+            foreach($data as $data){
+                DB::table('t_normalisasi')->insert(
+                    ['dteday' => $data->dteday,
+                    'temp' => (($data->temp-$min_temp)/($max_temp-$min_temp)),
+                    'hum' =>  (($data->hum-$min_hum)/($max_hum-$min_hum)),
+                    'windspeed' =>  (($data->windspeed-$min_windspeed)/($max_windspeed-$min_windspeed)),
+                    'weathersit'=> (($data->weathersit-$min_weathersit)/($max_weathersit-$min_weathersit))]
+                );
+            }
+        }
+        
+
+        return redirect('index_normalisasi');
+    }
+
+    public function index_normalisasi()
+    {
+        $normalisasi = DB::table('t_normalisasi')->orderBy('dteday', 'desc')->get();
+        return view('public.normalisasi', ['weather'=>$normalisasi, 'normalisasi' => $normalisasi]);
+    }
+
 }

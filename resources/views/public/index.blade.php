@@ -141,8 +141,16 @@
                                             class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                             <div class="mdc-card">
                                                 <h6 class="card-title">Data Cuaca</h6>
-                                                <h6 class="card-title card-padding pb-0"></h6>
+                                                <h6 class="card-title card-padding pb-0"><a href="{{ route('normalisasi') }}"></a></h6>
+                                               
                                                 <div class="table-responsive">
+                                                    <form action="/normalisasi" method="POST">
+                                                        {{ csrf_field() }}
+                                                            <div class="template-demo">
+                                                                    <button type="submit"
+                                                                        class="mdc-button mdc-button--unelevated">
+                                                                        Normalisasi
+                                                                    </button>
                                                     <table id="example" class="table">
                                                         <thead>
                                                             <tr>
@@ -157,10 +165,10 @@
                                                             @foreach ($weather as $weather)
 
                                                             <tr>
-                                                                <td class="text-left">{{$weather->dteday}}</td>
-                                                                <td>{{$weather->temp}}</td>
-                                                                <td>{{$weather->hum}}</td>
-                                                                <td>{{$weather->windspeed}}</td>
+                                                                <td class="text-left"><input type="hidden" name="dteday" value="{{$weather->dteday}}">{{$weather->dteday}}</td>
+                                                                <td><input type="hidden" name="temp" value="{{$weather->temp}}">{{$weather->temp}}</td>
+                                                                <td><input type="hidden" name="hum" value="{{$weather->hum}}">{{$weather->hum}}</td>
+                                                                <td><input type="hidden" name="windspeed" value="{{$weather->windspeed}}">{{$weather->windspeed}}</td>
                                                                 <td>
                                                                     @if ($weather->weathersit == '1')
                                                                     <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}"
@@ -184,6 +192,7 @@
                                                             @endforeach
                                                         </tbody>
                                                     </table>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
