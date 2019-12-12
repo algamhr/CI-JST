@@ -48,7 +48,7 @@
                                                                         <div class="mdc-notched-outline__leading"></div>
                                                                         <div class="mdc-notched-outline__notch">
                                                                             <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label" placeholder="Epoch"></label>
+                                                                                class="mdc-floating-label">Epoch</label>
                                                                         </div>
                                                                         <div class="mdc-notched-outline__trailing">
                                                                         </div>
@@ -60,12 +60,12 @@
                                                                 class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                                                 <div class="mdc-text-field mdc-text-field--outlined">
                                                                     <input id="learn" class="mdc-text-field__input" type="text"
-                                                                        name="lr" placeholder="Learning Rate">
+                                                                        name="lr">
                                                                     <div class="mdc-notched-outline">
                                                                         <div class="mdc-notched-outline__leading"></div>
                                                                         <div class="mdc-notched-outline__notch">
                                                                             <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label"></label>
+                                                                                class="mdc-floating-label">Learning Rate</label>
                                                                         </div>
                                                                         <div class="mdc-notched-outline__trailing">
                                                                         </div>
@@ -82,7 +82,7 @@
                                                                         <div class="mdc-notched-outline__leading"></div>
                                                                         <div class="mdc-notched-outline__notch">
                                                                             <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label" placeholder="Neuron Hidden"></label>
+                                                                                class="mdc-floating-label" >Neuron Hidden</label>
                                                                         </div>
                                                                         <div class="mdc-notched-outline__trailing">
                                                                         </div>
@@ -94,12 +94,12 @@
                                                                 class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                                                 <div class="mdc-text-field mdc-text-field--outlined">
                                                                     <input class="mdc-text-field__input" type="text"
-                                                                        name="e" id="error" placeholder="Error">
+                                                                        name="e" id="error">
                                                                     <div class="mdc-notched-outline">
                                                                         <div class="mdc-notched-outline__leading"></div>
                                                                         <div class="mdc-notched-outline__notch">
                                                                             <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label"></label>
+                                                                                class="mdc-floating-label">Error </label>
                                                                         </div>
                                                                         <div class="mdc-notched-outline__trailing">
                                                                         </div>
@@ -107,7 +107,7 @@
                                                                 </div>
                                                             </div>
 
-                                                            
+
                                                             <td>
                                                                 <div class="template-demo">
                                                                     <button type="submit"
@@ -136,7 +136,7 @@
                                             <div class="mdc-card">
                                                 <h6 class="card-title">Data Cuaca</h6>
                                                 <h6 class="card-title card-padding pb-0"><a href="{{ route('normalisasi') }}"></a></h6>
-                                               
+
                                                 <div class="table-responsive">
                                                     <form action="/normalisasi" method="POST">
                                                         {{ csrf_field() }}
@@ -178,11 +178,19 @@
             <!-- partial -->
         </div>
 
-        <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
-        <!-- Datatables -->
-        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-        <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{{asset('assets/admin/assets/vendors/js/vendor.bundle.base.js')}}"></script>
+    <script src="{{asset('assets/admin/assets/js/material.js')}}"></script>
+    <script src="{{asset('assets/admin/assets/js/misc.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.js"></script>
 
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <!-- Datatables -->
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src='https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js'></script>
+    <script src="{{ asset('js/select2.min.js') }}"></script>
+    <script src="{{ asset('js/flatpicker.js') }}"></script>
 
         <script>
             $(document).ready(function () {
@@ -203,7 +211,7 @@
                 windspeed[i] = data[i].windspeed;
                 weathersit[i] = data[i].weathersit;
             }
-        
+
 
             function latih(){
                 var epoch = document.getElementById('epoch').value;
@@ -265,7 +273,7 @@
                     }
                     console.log("Output ke-"+(x+1)+" = "+output[x]);
                 }
-                
+
                 // console.log(Math.random());
                 console.log("Random bobot ke hidden");
                 for(i=0;i<neuron_h;i++){
