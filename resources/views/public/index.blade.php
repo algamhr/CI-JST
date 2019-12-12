@@ -35,168 +35,79 @@
                                         <div class="mdc-layout-grid">
                                             <div class="mdc-layout-grid__inner">
                                                 <div
-                                                    class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
+                                                    class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                     <div class="mdc-card">
-                                                        <h6 class="card-title">Normalisasi</h6>
-                                                        <div class="template-demo">
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Epoch</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Learning
-                                                                                Rate</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Neuron
-                                                                                Hidden</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            <div
-                                                                class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
-                                                                <div class="mdc-text-field mdc-text-field--outlined">
-                                                                    <input class="mdc-text-field__input" type="text"
-                                                                        name="temp" id="text-field-hero-input">
-                                                                    <div class="mdc-notched-outline">
-                                                                        <div class="mdc-notched-outline__leading"></div>
-                                                                        <div class="mdc-notched-outline__notch">
-                                                                            <label for="text-field-hero-input"
-                                                                                class="mdc-floating-label">Error</label>
-                                                                        </div>
-                                                                        <div class="mdc-notched-outline__trailing">
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                            
-                                                            <td>
-                                                                <div class="template-demo">
-                                                                    <button type="submit"
-                                                                        class="mdc-button mdc-button--unelevated">
-                                                                        Latih Data
-                                                                    </button>
-                                                            </td>
-                                                            </form>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div
-                                                class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
-                                                <div class="mdc-card">
-                                                    <h6 class="card-title">Hasil</h6>
-                                                    <div class="template-demo">
-                                                        <div class="mdc-select demo-width-class"
-                                                            data-mdc-auto-init="MDCSelect">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="mdc-layout-grid">
-                                    <div class="mdc-layout-grid__inner">
-                                        <div
-                                            class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
-                                            <div class="mdc-card">
-                                                <h6 class="card-title">Data Cuaca</h6>
-                                                <h6 class="card-title card-padding pb-0"><a href="{{ route('normalisasi') }}"></a></h6>
-                                               
-                                                <div class="table-responsive">
-                                                    <form action="/normalisasi" method="POST">
-                                                        {{ csrf_field() }}
+                                                        <h6 class="card-title">Data Cuaca</h6>
+                                                        <h6 class="card-title card-padding pb-0"><a
+                                                                href="{{ route('normalisasi') }}"></a></h6>
+                                                        <form action="/normalisasi" method="POST">
+                                                            {{ csrf_field() }}
                                                             <div class="template-demo">
-                                                                    <button type="submit"
-                                                                        class="mdc-button mdc-button--unelevated">
-                                                                        Normalisasi
-                                                                    </button>
-                                                    <table id="example" class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th class="text-left">Tanggal</th>
-                                                                <th>Suhu</th>
-                                                                <th>Kelembaban</th>
-                                                                <th>Kecepatan Angin</th>
-                                                                <th>Weathersit</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            @foreach ($weather as $weather)
+                                                                <button type="submit"
+                                                                    class="mdc-button mdc-button--unelevated">
+                                                                    Normalisasi
+                                                                </button>
+                                                                <div class="table-responsive">
+                                                                    <table id="example" class="table">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th class="text-left">Tanggal</th>
+                                                                                <th>Suhu</th>
+                                                                                <th>Kelembaban</th>
+                                                                                <th>Kecepatan Angin</th>
+                                                                                <th>Weathersit</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            @foreach ($weather as $weather)
 
-                                                            <tr>
-                                                                <td class="text-left"><input type="hidden" name="dteday" value="{{$weather->dteday}}">{{$weather->dteday}}</td>
-                                                                <td><input type="hidden" name="temp" value="{{$weather->temp}}">{{$weather->temp}}</td>
-                                                                <td><input type="hidden" name="hum" value="{{$weather->hum}}">{{$weather->hum}}</td>
-                                                                <td><input type="hidden" name="windspeed" value="{{$weather->windspeed}}">{{$weather->windspeed}}</td>
-                                                                <td>
-                                                                    @if ($weather->weathersit == '1')
-                                                                    <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}"
-                                                                        alt="" height="25px">
+                                                                            <tr>
+                                                                                <td class="text-left"><input
+                                                                                        type="hidden" name="dteday"
+                                                                                        value="{{$weather->dteday}}">{{$weather->dteday}}
+                                                                                </td>
+                                                                                <td><input type="hidden" name="temp"
+                                                                                        value="{{$weather->temp}}">{{$weather->temp}}
+                                                                                </td>
+                                                                                <td><input type="hidden" name="hum"
+                                                                                        value="{{$weather->hum}}">{{$weather->hum}}
+                                                                                </td>
+                                                                                <td><input type="hidden"
+                                                                                        name="windspeed"
+                                                                                        value="{{$weather->windspeed}}">{{$weather->windspeed}}
+                                                                                </td>
+                                                                                <td>
+                                                                                    @if ($weather->weathersit == '1')
+                                                                                    <img src="{{asset('assets/admin/assets/images/weather/1.sun.png')}}"
+                                                                                        alt="" height="25px">
 
-                                                                    @elseif ($weather->weathersit == '2')
-                                                                    <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}"
-                                                                        alt="" height="25px">
+                                                                                    @elseif ($weather->weathersit ==
+                                                                                    '2')
+                                                                                    <img src="{{asset('assets/admin/assets/images/weather/2.rainy.png')}}"
+                                                                                        alt="" height="25px">
 
-                                                                    @elseif ($weather->weathersit == '3')
-                                                                    <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}"
-                                                                        alt="" height="25px">
+                                                                                    @elseif ($weather->weathersit ==
+                                                                                    '3')
+                                                                                    <img src="{{asset('assets/admin/assets/images/weather/3.thunderstorm.png')}}"
+                                                                                        alt="" height="25px">
 
-                                                                    @elseif ($weather->weathersit == '4')
-                                                                    <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}"
-                                                                        alt="" height="25px">
+                                                                                    @elseif ($weather->weathersit ==
+                                                                                    '4')
+                                                                                    <img src="{{asset('assets/admin/assets/images/weather/4.windy.png')}}"
+                                                                                        alt="" height="25px">
 
-                                                                    @endif
-                                                                </td>
-                                                            </tr>
-                                                            @endforeach
-                                                        </tbody>
-                                                    </table>
-                                                    </form>
+                                                                                    @endif
+                                                                                </td>
+                                                                            </tr>
+                                                                            @endforeach
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                        </form>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
             </main>
             <!-- partial -->
