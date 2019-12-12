@@ -38,15 +38,23 @@
                                                     class="mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                     <div class="mdc-card">
                                                         <h6 class="card-title">Data Cuaca</h6>
-                                                        <h6 class="card-title card-padding pb-0"><a
-                                                                href="{{ route('normalisasi') }}"></a></h6>
-                                                        <form action="/normalisasi" method="POST">
-                                                            {{ csrf_field() }}
-                                                            <div class="template-demo">
+
+                                                        <div class="text-right">
+                                                                <form action="/normalisasi" method="POST">
+                                                                 @csrf
                                                                 <button type="submit"
                                                                     class="mdc-button mdc-button--unelevated">
                                                                     Normalisasi
                                                                 </button>
+                                                            </div>
+
+                                                        <h6 class="card-title card-padding pb-0">
+
+                                                            <a href="{{ route('normalisasi') }}"></a></h6>
+
+                                                            {{ csrf_field() }}
+                                                            <div class="template-demo">
+
                                                                 <div class="table-responsive">
                                                                     <table id="example" class="table">
                                                                         <thead>
