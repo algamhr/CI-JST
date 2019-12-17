@@ -43,7 +43,7 @@
                                                                         class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                                                         <div class="mdc-text-field mdc-text-field--outlined">
                                                                             <input class="mdc-text-field__input" type="text"
-                                                                                name="temp" id="epoch">
+                                                                                name="temp" id="suhu">
                                                                             <div class="mdc-notched-outline">
                                                                                 <div class="mdc-notched-outline__leading"></div>
                                                                                 <div class="mdc-notched-outline__notch">
@@ -60,7 +60,7 @@
                                                                         class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                                                         <div class="mdc-text-field mdc-text-field--outlined">
                                                                             <input id="learn" class="mdc-text-field__input" type="text"
-                                                                                name="lr">
+                                                                                name="kelembaban">
                                                                             <div class="mdc-notched-outline">
                                                                                 <div class="mdc-notched-outline__leading"></div>
                                                                                 <div class="mdc-notched-outline__notch">
@@ -77,7 +77,7 @@
                                                                         class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
                                                                         <div class="mdc-text-field mdc-text-field--outlined">
                                                                             <input class="mdc-text-field__input" type="text"
-                                                                                name="nh" id="neuron">
+                                                                                name="nh" id="kecepatan_angin">
                                                                             <div class="mdc-notched-outline">
                                                                                 <div class="mdc-notched-outline__leading"></div>
                                                                                 <div class="mdc-notched-outline__notch">
@@ -93,7 +93,7 @@
                                                                     <td>
                                                                         <div class="template-demo">
                                                                             <button type="submit"
-                                                                                class="mdc-button mdc-button--unelevated" onclick="latih();">
+                                                                                class="mdc-button mdc-button--unelevated" onclick="Uji();">
                                                                                Uji Data
                                                                             </button>
                                                                     </td>
@@ -106,7 +106,8 @@
                                                         class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                         <div class="mdc-card">
                                                             <h6>Prediksi Cuaca</h6>
-                                                                <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="hasil"></textarea>
+                                                                <div id="hasil">
+                                                                </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -134,6 +135,16 @@
             $(document).ready(function () {
                 $('#example').DataTable();
             });
+
+        function Uji(){
+            var suhu = document.getElementById('suhu').value;
+            var kelembaban = document.getElementById('kelembaban').value;
+            var kecepatan_angin = document.getElementById('kecepatan_angin').value;
+            var hasil = document.getElementById('hasil');
+            var t_hasil = " ";
+
+        }
+        
 
         </script>
 </body>
