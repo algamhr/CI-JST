@@ -124,7 +124,7 @@
                                                 class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                 <div class="mdc-card">
                                                     <h6>Hasil</h6>
-                                                        <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="normalisasi"></textarea>
+                                                        <textarea class="form-control" style="max-height: 500px; max-width: 200px;" id="hasil"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -286,6 +286,7 @@
                     }
                     console.log("Output ke-"+(x+1)+" = "+output[x]);
                 }
+                hasil.value = output[0] +"|"+output[1] + "|" +output[2]+"|" + output[3] +"|"+output[4] + "|" +output[5]+"|" + output[6] +"|"+output[7] + "|" +output[8]+"|" + output[9] +"|"+output[10] + "|" +output[11]+"|" + output[12] +"|"+output[13] + "|" +output[14]+"|" + output[15] +"|"+output[16] + "|" +output[17]+"|" + output[18] +"|"+output[19] + "|" +output[8]+"|" + output[9] +"|"+output[20] + "|" +output[21]+"|" + output[22] +"|"+output[23] + "|" +output[24]+"|" + output[25] +"|"+output[26] + "|" +output[27]+"|" + output[28] +"|"+output[29];
 
                 // console.log(Math.random());
                 console.log("Random bobot ke hidden");

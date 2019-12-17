@@ -37,7 +37,7 @@
                                                         <div
                                                             class="mdc-layout-grid__cell--span-4 mdc-layout-grid__cell--span-6-desktop stretch-card">
                                                             <div class="mdc-card">
-                                                                <h6 class="card-title">Pelatihan (Training)</h6>
+                                                                <h6 class="card-title">Pengujian</h6>
                                                                 <div class="template-demo">
                                                                     <div
                                                                         class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-3-desktop">
